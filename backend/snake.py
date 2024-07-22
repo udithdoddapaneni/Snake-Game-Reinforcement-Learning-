@@ -21,7 +21,7 @@ for j in [0,31]:
 class Snake:
     def __init__(self) -> None:
         global BOARD
-        self.body = [(30,2),(30,1)]
+        self.body = [(20, 20),(19,20)]
         self.direction = (0, 1)
         for i,j in self.body:
             BOARD[i][j] = 2
