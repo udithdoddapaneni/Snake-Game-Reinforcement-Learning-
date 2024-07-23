@@ -51,8 +51,10 @@ def simulate():
         for event in pg.event.get():
             if event.type == pg.QUIT:
                 running = False
-                    
-        sn.SNAKE.move()
+        
+        val = sn.game()
+        if val == 0:
+            running = False
         draw(screen, display_grid, sn.BOARD)
         pg.display.update()
 
